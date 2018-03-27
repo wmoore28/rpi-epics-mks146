@@ -19,8 +19,18 @@ BNS12:MKS:CH4:FLOW             3.9
 ```
 
 ## Notes
+#### Modifications
 When modifying the .db or .proto files in mks146App/Db/, you must run 'make' to install 
 them in the top-level directories.  Then re-run the IOC to load the changes. 
+
+#### IOC
+Full list of PVs available can be dumped from the shell on the running IOC (iocsh).
+```
+epics> dbl
+BNS12:MKS:CH4:FLOW
+BNS12:MKS:VERSION
+BNS12:MKS:asyn
+```
 
 ## References
 - EPICS Base: https://epics.anl.gov/base/R3-14/12.php
