@@ -19,7 +19,7 @@ BNS12:MKS:CH4:FLOW             3.9
 ```
 
 ## Notes
-When modifying the .db or .proto files in Db/, you must run 'make' to install 
+When modifying the .db or .proto files in mks146App/Db/, you must run 'make' to install 
 them in the top-level directories.  Then re-run the IOC to load the changes. 
 
 ## References
