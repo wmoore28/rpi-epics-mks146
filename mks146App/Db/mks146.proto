@@ -1,0 +1,28 @@
+#
+# MKS 146
+#
+
+########################################
+Terminator   = CR;
+writetimeout = 100;     # milliseconds
+readtimeout  = 500;
+replytimeout = 1000;
+ExtraInput   = Ignore;
+########################################
+
+# Reads channel 4
+getFlow {
+    out "@6014?";
+    in "@6014:%f";
+}
+
+getAi {
+    out "\$1?";
+    in "\$1:%f";
+}
+
+getVersion {
+    out "@701 ?";
+    in "@701 :%s";
+}
+
