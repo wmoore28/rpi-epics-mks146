@@ -18,8 +18,9 @@ record(stringin, "$(P)$(R)VERSION") {
 # protocol file for details.
 record(ai, "$(P)$(R)CH4:FLOW") {
     field(DTYP, "stream")
-#   field(INP, "@mks146.proto getFlow $(PORT)")
-    field(INP, "@mks146.proto getAi(\@6014) $(PORT)")
+#   field(INP,  "@mks146.proto getFlow $(PORT)")
+    field(INP,  "@mks146.proto getAi(\@6014) $(PORT)")
+    field(PREC, "1")
     field(SCAN, "5 second")
 }
 
